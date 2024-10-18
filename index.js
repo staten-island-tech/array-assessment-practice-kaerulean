@@ -99,8 +99,8 @@ oldNew.sort(); */
 oldNew.forEach((book)=>console.log(book.name,book.publishDate)) 
  */
 
-const oldNew = books.sort((book1, book2) => book1.publishDate - book2.publishDate);
-oldNew.forEach((book)=>console.log(book.name,book.publishDate))
+const oldNew = books.sort((book1, book2) => book1.publishDate - book2.publishDate); //sorts books based on publish date
+oldNew.forEach((book)=>console.log(book.name,book.publishDate)) //for each book, console.log the book name and publish date
 
 
 //sort books alphabetically
@@ -120,7 +120,6 @@ warAndPeace.forEach((names) => console.log(names.authorFirst + " " + names.autho
 const before1900 = books.filter((book)=> book.publishDate <= 1900);
 console.log(before1900.length); 
  
-
 
 //was there at least one book published within the last 100 years?
 function last100 (){
